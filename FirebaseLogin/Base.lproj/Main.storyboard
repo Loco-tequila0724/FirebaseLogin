@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="itd-Wv-WXt">
             <objects>
-                <viewController id="07N-yN-uU8" customClass="ViewController" customModule="LoginFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="07N-yN-uU8" customClass="ViewController" customModule="FirebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RvE-Sm-8cv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="tappedRegisterButton:" destination="07N-yN-uU8" eventType="touchUpInside" id="jBS-wU-gDR"/>
+                                    <action selector="tappedRegisterButton:" destination="07N-yN-uU8" eventType="touchUpInside" id="MTN-aj-sxt"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-BT-EPV">
@@ -134,15 +134,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="tas-D5-oI4" id="QTc-Sf-GOo"/>
-                        <outlet property="passwordTextField" destination="kAS-P6-OHH" id="Kdc-Cj-qfh"/>
-                        <outlet property="registerButton" destination="f3l-jI-Llr" id="YOi-jY-SJS"/>
-                        <outlet property="usernameTextField" destination="eRQ-zG-YKr" id="hgM-8i-Sce"/>
+                        <outlet property="emailTextField" destination="tas-D5-oI4" id="ry7-1V-095"/>
+                        <outlet property="passwordTextField" destination="kAS-P6-OHH" id="DUi-Ly-jMr"/>
+                        <outlet property="registerButton" destination="f3l-jI-Llr" id="0Fw-Wx-qkV"/>
+                        <outlet property="usernameTextField" destination="eRQ-zG-YKr" id="cnM-KH-Ubk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLP-Bq-iq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="-28"/>
+            <point key="canvasLocation" x="-254" y="-1113"/>
         </scene>
     </scenes>
     <resources>

@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="IcX-Bc-22K">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sgt-CZ-Wa8" customClass="HomeViewController" customModule="LoginFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sgt-CZ-Wa8" customClass="HomeViewController" customModule="FirebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yPh-hA-dgp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,9 +33,6 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="tappedLoguotButton:" destination="sgt-CZ-Wa8" eventType="touchUpInside" id="DgR-9k-imX"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8A-WX-T3I">
                                 <rect key="frame" x="162.5" y="406" width="89.5" height="26.5"/>
@@ -75,10 +72,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="vaO-Vt-UUw" id="Obu-Zq-uED"/>
-                        <outlet property="emailLabel" destination="D8A-WX-T3I" id="Lfa-nx-nAc"/>
-                        <outlet property="logoutButton" destination="xOL-Al-NSH" id="b4e-of-9BN"/>
-                        <outlet property="nameLabel" destination="8g9-zt-lUd" id="7bA-Ga-e61"/>
+                        <outlet property="dateLabel" destination="vaO-Vt-UUw" id="N62-gb-bae"/>
+                        <outlet property="emailLabel" destination="D8A-WX-T3I" id="9zQ-x3-ozV"/>
+                        <outlet property="logoutButton" destination="xOL-Al-NSH" id="Mkb-Xa-WKm"/>
+                        <outlet property="nameLabel" destination="8g9-zt-lUd" id="oCE-Fo-62s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dh-Vg-aCM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
