@@ -25,7 +25,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="eaf-97-bgQ">
                                 <rect key="frame" x="60" y="306" width="294" height="250"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gRy-dP-9an">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gRy-dP-9an" customClass="ViewController">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="66.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-nJ-CGh">
@@ -96,9 +96,6 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="tappedRegisterButton:" destination="07N-yN-uU8" eventType="touchUpInside" id="MTN-aj-sxt"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-BT-EPV">
                                 <rect key="frame" x="62.5" y="695" width="289" height="30"/>
@@ -133,16 +130,10 @@
                             <constraint firstItem="XOd-ok-xnT" firstAttribute="top" secondItem="QUR-nZ-1VC" secondAttribute="top" constant="150" id="xNI-xP-MrG"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="emailTextField" destination="tas-D5-oI4" id="ry7-1V-095"/>
-                        <outlet property="passwordTextField" destination="kAS-P6-OHH" id="DUi-Ly-jMr"/>
-                        <outlet property="registerButton" destination="f3l-jI-Llr" id="0Fw-Wx-qkV"/>
-                        <outlet property="usernameTextField" destination="eRQ-zG-YKr" id="cnM-KH-Ubk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLP-Bq-iq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-254" y="-1113"/>
+            <point key="canvasLocation" x="-2672" y="-1195"/>
         </scene>
     </scenes>
     <resources>

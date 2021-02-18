@@ -19,14 +19,12 @@ class HomeViewController:UIViewController {
         }
     }
 
+   
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
-    //    @IBAction func tappedLogoutButton(_ sender: Any) {
-    //        handleLogout()
-    //    }
-
+    
     private func handleLogout() {
         do {
             try Auth.auth().signOut()
