@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385DAAAB25DE84C200BC992E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 385DAAAA25DE84C200BC992E /* GoogleService-Info.plist */; };
 		38881F6625DDB38400669604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38881F6525DDB38400669604 /* AppDelegate.swift */; };
 		38881F6825DDB38400669604 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38881F6725DDB38400669604 /* SceneDelegate.swift */; };
 		38881F6A25DDB38400669604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38881F6925DDB38400669604 /* ViewController.swift */; };
 		38881F6D25DDB38400669604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38881F6B25DDB38400669604 /* Main.storyboard */; };
 		38881F6F25DDB38600669604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38881F6E25DDB38600669604 /* Assets.xcassets */; };
 		38881F7225DDB38600669604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38881F7025DDB38600669604 /* LaunchScreen.storyboard */; };
-		38881F9525DDB85F00669604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38881F9425DDB85F00669604 /* GoogleService-Info.plist */; };
 		38881F9925DDB98200669604 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38881F9825DDB98200669604 /* HomeViewController.swift */; };
 		38881F9C25DDB9C500669604 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38881F9B25DDB9C500669604 /* UIColor-Extension.swift */; };
 		38881F9F25DDB9E000669604 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38881F9E25DDB9E000669604 /* Home.storyboard */; };
@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385DAAAA25DE84C200BC992E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38881F6225DDB38400669604 /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38881F6525DDB38400669604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38881F6725DDB38400669604 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		38881F6E25DDB38600669604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38881F7125DDB38600669604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38881F7325DDB38600669604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38881F9425DDB85F00669604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38881F9825DDB98200669604 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		38881F9B25DDB9C500669604 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		38881F9E25DDB9E000669604 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				38881F6B25DDB38400669604 /* Main.storyboard */,
 				38881F6E25DDB38600669604 /* Assets.xcassets */,
 				38881F7025DDB38600669604 /* LaunchScreen.storyboard */,
-				38881F9425DDB85F00669604 /* GoogleService-Info.plist */,
+				385DAAAA25DE84C200BC992E /* GoogleService-Info.plist */,
 				38881F7325DDB38600669604 /* Info.plist */,
 			);
 			path = FirebaseLogin;
@@ -164,7 +164,7 @@
 			files = (
 				38881F7225DDB38600669604 /* LaunchScreen.storyboard in Resources */,
 				38881F9F25DDB9E000669604 /* Home.storyboard in Resources */,
-				38881F9525DDB85F00669604 /* GoogleService-Info.plist in Resources */,
+				385DAAAB25DE84C200BC992E /* GoogleService-Info.plist in Resources */,
 				38881F6F25DDB38600669604 /* Assets.xcassets in Resources */,
 				38881F6D25DDB38400669604 /* Main.storyboard in Resources */,
 			);

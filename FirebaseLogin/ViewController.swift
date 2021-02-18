@@ -22,7 +22,6 @@ struct  User {
             }
     }
 
-
     class ViewController: UIViewController, UITextFieldDelegate {
 
         @IBOutlet weak var emailTextField: UITextField!
