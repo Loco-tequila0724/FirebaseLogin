@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  LoginWithFirebaseApp
@@ -19,20 +20,20 @@ struct  User {
         self.name = dic["name"] as! String
         self.createdAt = dic["createdAt"] as! Timestamp
         self.email = dic["email"] as! String
-            }
+        //    }
     }
 
 
-    class ViewController: UIViewController, UITextFieldDelegate {
+    class Main: UIViewController, UITextFieldDelegate {
 
-        @IBOutlet weak var emailTextField: UITextField!
-        @IBOutlet weak var passwordTextField: UITextField!
-        @IBOutlet weak var usernameTextField: UITextField!
-        @IBOutlet weak var registerButton: UIButton!
-        @IBAction func tappedRegisterButton(_ sender: Any) {
-            handleAuthToFirebase()
-            print("tappedRegisterButton")
-        }
+        //        @IBOutlet weak var emailTextField: UITextField!
+        //        @IBOutlet weak var passwordTextField: UITextField!
+        //        @IBOutlet weak var usernameTextField: UITextField!
+        //        @IBOutlet weak var registerButton: UIButton!
+        //        @IBAction func tappedRegisterButton(_ sender: Any) {
+        //            handleAuthToFirebase()
+        //            print("tappedRegisterButton")
+        //        }
 
         private func handleAuthToFirebase() {
             HUD.show(.progress, onView: view)
@@ -148,5 +149,5 @@ struct  User {
             }
         }
     }
-
+}
 
