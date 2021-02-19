@@ -55,7 +55,7 @@
                                                 <rect key="frame" x="0.0" y="20.5" width="294" height="42"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -100,6 +100,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedLoginButton:" destination="dIx-bl-SLc" eventType="touchUpInside" id="gA1-hm-eAx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TyV-pV-Sdl"/>
@@ -125,7 +128,6 @@
                         <outlet property="emailTextField" destination="eXb-g0-Y8o" id="qjB-Gy-00S"/>
                         <outlet property="loginButton" destination="PVY-R3-pda" id="yue-rJ-x0W"/>
                         <outlet property="passwordTextField" destination="pIh-cD-vJ0" id="R0P-lq-hJH"/>
-                        <outlet property="tappedLoginButton" destination="2qT-QW-FAr" id="8vy-1X-BRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVq-rG-Vrd" sceneMemberID="firstResponder"/>

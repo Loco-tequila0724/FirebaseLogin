@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func tappedAlreadyHaveAccountButton(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Login", bundle: nil)
+        let storyBoard = UIStoryboard(name:"Login", bundle: nil)
         let homeViewController = storyBoard.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
         navigationController?.pushViewController(homeViewController, animated: true)
     }

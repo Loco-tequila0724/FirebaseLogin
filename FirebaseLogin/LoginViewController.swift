@@ -8,6 +8,8 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import PKHUD
+import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,6 +22,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func tappedLoginButton(_ sender:Any){
+        HUD.show(.progress, onView: self.view)
         print("tapped Login Button")
 
         guard let email = emailTextField.text else { return }
@@ -32,7 +35,38 @@ class LoginViewController: UIViewController {
                 return
             }
             print("ログインに成功しました")
+
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            let userRef = Firestore.firestore().collection("users").document(uid)
+
+
+            userRef.getDocument { (snapshot,err) in
+                if let err = err {
+                    print("ユーザー情報の取得に失敗しました。\(err)")
+                    HUD.hide{(_) in
+                        HUD.flash(.error,delay: 1)
+                    }
+                    return
+                }
+
+                guard let data = snapshot?.data() else {return}
+                let user = User.init(dic: data)
+                print("ユーザー情報の取得ができました。\(user.name)")
+                HUD.hide{(_) in
+                    HUD.flash(.success,onView: self.view,delay: 1) { (_) in self.presentToHomeViewController(user:user)
+                    }
+                }
+            }
         }
+    }
+
+    private func presentToHomeViewController(user:User) {
+        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController = storyBoard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+
+        homeViewController.user = user
+        homeViewController.modalPresentationStyle = .fullScreen
+        self.present(homeViewController, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
@@ -55,7 +89,7 @@ extension LoginViewController: UITextFieldDelegate {
 
         if emailIsEmpty || passwordIsEmpty {
             loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor.rgb(red: 255, green: 141, blue: 187)
+            loginButton.backgroundColor = UIColor.rgb(red: 255, green: 221, blue: 187)
         } else {
             loginButton.isEnabled = true
             loginButton.backgroundColor = UIColor.rgb(red: 255, green: 141, blue: 0)
