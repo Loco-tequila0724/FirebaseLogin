@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="itd-Wv-WXt">
             <objects>
-                <viewController id="07N-yN-uU8" customClass="ViewController" customModule="FirebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="07N-yN-uU8" customClass="ViewController" customModule="FirebaseLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RvE-Sm-8cv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,6 +112,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYp-gB-aCm">
                                         <rect key="frame" x="243" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="こちら"/>
+                                        <connections>
+                                            <action selector="tappedAlreadyHaveAccountButton:" destination="07N-yN-uU8" eventType="touchUpInside" id="Yow-lB-opV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -142,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLP-Bq-iq4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3413" y="-1349"/>
+            <point key="canvasLocation" x="-4194" y="-1333"/>
         </scene>
     </scenes>
     <resources>

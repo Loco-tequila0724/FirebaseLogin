@@ -19,7 +19,6 @@ class HomeViewController:UIViewController {
         }
     }
 
-   
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -28,7 +27,7 @@ class HomeViewController:UIViewController {
     private func handleLogout() {
         do {
             try Auth.auth().signOut()
-            dismiss(animated: true, completion: nil)
+            presentToMainViewController()
         } catch (let err) {
             print("ログアウトに失敗しました：\(err)")
         }
@@ -46,6 +45,27 @@ class HomeViewController:UIViewController {
             dateLabel.adjustsFontSizeToFitWidth = true
             dateLabel.text = "作成日: " + dateString
         }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        confirmLoggedInUser()
+    }
+
+    private func confirmLoggedInUser() {
+        if Auth.auth().currentUser?.uid == nil || user == nil {
+            presentToMainViewController()
+        }
+    }
+
+    private func presentToMainViewController() {
+        let storyBoard = UIStoryboard(name:"Main",bundle: nil)
+        let viewController = storyBoard.instantiateViewController(identifier: "ViewController") as! ViewController
+
+        let navController = UINavigationController(rootViewController:viewController)
+
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController,animated: true,completion: nil)
     }
 
     private func dateFormatterForCreatedAt(date:Date) -> String {
